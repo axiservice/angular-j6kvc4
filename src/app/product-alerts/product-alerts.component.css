@@ -10,3 +10,6 @@
   color: white;
   border: none;
 }
+
+.stDotted{border: dotted darkblue 7px; background-color:#44d219}
+
