@@ -1,6 +1,10 @@
-<p *ngIf="product && product.price > 700">
-  <button (click)="notify.emit(product.price)">Notify Me</button>
+<p *ngIf="product_rx && product_rx.price > 700">
+  <button (click)="notify123.emit(product_rx.price)">Notify Me</button>
 </p>
-<p *ngIf="product && product.price <= 700">
-  <button class="stDotted" (click)="notify.emit(product.price)">XXXX</button>
+<p *ngIf="product_rx && product_rx.price <= 700">
+  <button class="stDotted stDottedPlus" (click)="notify123.emit(product_rx)">XXXX</button>
+</p>
+<p *ngIf="product_rx">
+  <button class="stDottedPlus"(click)="notify456.emit(product_rx)">
+    {{product_rx.price}} {{product_rx.description}}</button>
 </p>

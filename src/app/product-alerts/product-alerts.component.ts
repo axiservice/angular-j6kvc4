@@ -1,7 +1,7 @@
 import { Component} from '@angular/core';
 import { Input } from '@angular/core';
 import { Output, EventEmitter } from '@angular/core';
-import { Product } from '../products';
+import { Product } from '../productsM1';
 
 @Component({
   selector: 'app-product-alerts',
@@ -9,6 +9,7 @@ import { Product } from '../products';
   styleUrls: ['./product-alerts.component.css']
 })
 export class ProductAlertsComponent {
-  @Input() product: Product|undefined;
-  @Output() notify = new EventEmitter<number>();
+  @Input() product_rx: Product|undefined;
+  @Output() notify123 = new EventEmitter<any>();
+  @Output() notify456 = new EventEmitter<any>();
 }

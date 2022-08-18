@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent {
-  onNotify(agreed: number) {
+  nfy(agreed: number) {
     window.alert('nnnnnnnnnnn'+agreed);
   }
 }

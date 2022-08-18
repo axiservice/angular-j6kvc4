@@ -5,17 +5,17 @@ export interface Product {
   description: string;
 }
 
-export const products = [
+export const products_list = [
   {
     id: 1,
     name: 'Phone XL',
-    price: 99,
+    price: 10,
     description: 'A large phone with one of the best screens'
   },
   {
     id: 2,
     name: 'Phone Mini',
-    price: 699,
+    price: 9699,
     description: 'A great phone with one of the best cameras'
   },
   {

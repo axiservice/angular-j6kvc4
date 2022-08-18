@@ -1,15 +1,17 @@
 /* Button */
-.button, button {
+.button, button{
   display: inline-flex;
   align-items: center;
   padding: 8px 16px;
-  border-radius: 2px;
-  font-size: 14px;
-  cursor: pointer;
-  background-color: #d21919;
+  border-radius: 20px;
+  font-size: 19px;
+  cursor: grabbing;
+  background-color: #d23519;
   color: white;
   border: none;
 }
 
-.stDotted{border: dotted darkblue 7px; background-color:#44d219}
+.stDotted{border: dotted rgb(25, 0, 139) 7px; background-color:#44d219}
+
+.stDottedPlus{border: dotted rgb(139, 0, 0) 17px; }
 

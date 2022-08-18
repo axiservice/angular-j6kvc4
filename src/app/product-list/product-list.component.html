@@ -1,21 +1,27 @@
 <h2>Products</h2>
 
-<div *ngFor="let product of products">
+{{ products_BBB[0] }}<br />
+{{ xxx }}<br />
+{{ xxx_type }}<br />
+{{ products_BBB }}
+
+<div *ngFor="let oneProduct of products_AAA">
   <h3>
-    <a [title]="product.name + ' details'">
-      {{ product.name }}
+    <a [title]="oneProduct.name + ' details'">
+      {{ oneProduct.name }}
     </a>
   </h3>
 
-  <p *ngIf="product.description">
-    Description: {{ product.description }}
+  <p *ngIf="oneProduct.description">
+    Description: {{ oneProduct.description }}
   </p>
 
-  <button (click)="share()">
-    Share
-  </button>
+  <button (click)="share()">Share</button>
 
-  <app-product-alerts [product]="product" (notify)="onNotify($event)">
+  <app-product-alerts
+    [product_rx]="oneProduct"
+    (notify123)="onNotify_1($event)"
+    (notify456)="onNotify_2($event)"
+  >
   </app-product-alerts>
-
 </div>
